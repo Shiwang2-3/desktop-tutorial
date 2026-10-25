@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for Tech Club events">
+    <title>Register - Tech Club</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <h1>Tech Club Registration</h1>
+        <nav>
+            <a href="assignment3.html">Home</a> |
+            <a href="about2.html">About</a> |
+            <a href="register2.html">Register</a> |
+            <a href="contact2.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <p>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"
+                       required minlength="8">
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter phone number" required>
+            </p>
+
+            <p>
+                <label for="date">Date of Birth:</label><br>
+                <input type="date" id="date" name="date" required>
+            </p>
+
+            <fieldset>
+                <legend>Choose Your Year</legend>
+                <input type="radio" id="first" name="year" value="First Year" required>
+                <label for="first">First Year</label><br>
+
+                <input type="radio" id="second" name="year" value="Second Year">
+                <label for="second">Second Year</label><br>
+
+                <input type="radio" id="third" name="year" value="Third Year">
+                <label for="third">Third Year</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select Your Interests</legend>
+                <input type="checkbox" id="web" name="interests" value="Web Development">
+                <label for="web">Web Development</label><br>
+
+                <input type="checkbox" id="coding" name="interests" value="Coding">
+                <label for="coding">Coding</label><br>
+
+                <input type="checkbox" id="robotics" name="interests" value="Robotics">
+                <label for="robotics">Robotics</label>
+            </fieldset>
+
+            <p>
+                <label for="event">Choose an Event:</label><br>
+                <select id="event" name="event" required>
+                    <option value="">-- Select an Event --</option>
+                    <option value="web">Web Development Workshop</option>
+                    <option value="coding">Coding Competition</option>
+                    <option value="robotics">Robotics Exhibition</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Why do you want to join?</label><br>
+                <textarea id="message" name="message" rows="5" cols="35"
+                          placeholder="Write your message here"></textarea>
+            </p>
+
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tech Club</p>
+    </footer>
+
+</body>
+</html>
